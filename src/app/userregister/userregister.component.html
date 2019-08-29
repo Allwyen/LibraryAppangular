@@ -1,0 +1,22 @@
+<br><br><div class="container mt-5 mb-5">
+  <div class="row justify-content-md-center">
+      <div class="col col-1 col-md-3"></div>
+      <div class="col col-10 col-md-6 border border-secondary rounded p-5">
+          <form (ngSubmit)=onSubmit(f) #f="ngForm">
+              <table class="table table-borderless">
+                  <tr><td>Name</td><td><input type="text" class="form-control" name="ename" id="" ngModel></td></tr>
+                  <tr><td>Address</td><td><textarea name="eaddress" class="form-control" id="" cols="30" rows="3" ngModel></textarea></td></tr>
+                  <tr><td>Gender</td><td><input type="radio" class="ml-md-3" name="egender" id="" value="male" ngModel>Male<input type="radio" class="ml-md-3" name="egender" value="female" id="" ngModel>Female</td></tr>
+                  
+                  <tr><td>DoB</td><td><input type="date" class="form-control" name="edob" id="" ngModel></td></tr>
+                  <tr><td>Email</td><td><input type="email" class="form-control" name="eemail" id="" ngModel></td></tr>
+                  <tr><td>Username</td><td><input type="text" class="form-control" name="euname" id="" ngModel></td></tr>
+                  <tr><td>Password</td><td><input type="password" class="form-control" name="epass" id="" ngModel></td></tr>
+                  <tr><td>Confirm-Password</td><td><input type="password" class="form-control" name="ecpass" id="" ngModel></td></tr>
+                  <tr><td><input type="reset" class="btn btn-danger float-right" value="Reset"></td><td><input type="submit" class="btn btn-primary" value="Register"></td></tr>
+              </table>
+          </form>
+      </div>
+      <div class="col col-1 col-md-3"></div>
+  </div>
+</div>

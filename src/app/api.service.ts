@@ -23,6 +23,14 @@ export class ApiService {
   {
     return this.http.get("https://libraryapp-allwyen.herokuapp.com/authorall");
   }
+  userregisterdata(data)
+  {
+    return this.http.post("https://libraryapp-allwyen.herokuapp.com/employeeregister1",data);
+  }
+  userlogindata(data)
+  {
+    return this.http.post("https://libraryapp-allwyen.herokuapp.com/employeelogin1",data);
+  }
 
 }
 
