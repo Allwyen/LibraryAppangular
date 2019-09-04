@@ -10,7 +10,9 @@ const appRoutes:Routes = [
   {path:'addauthor',component:AddauthorComponent},
   {path:'viewauthor',component:ViewauthorComponent},
   {path:'userlogin',component:UserloginComponent},
-  {path:'userregister',component:UserregisterComponent}
+  {path:'userregister',component:UserregisterComponent},
+  {path:'booksingle',component:BooksingleComponent}
+
 ]
 
 import { AppComponent } from './app.component';
@@ -21,6 +23,7 @@ import { AddauthorComponent } from './addauthor/addauthor.component';
 import { ViewauthorComponent } from './viewauthor/viewauthor.component';
 import { UserregisterComponent } from './userregister/userregister.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { BooksingleComponent } from './booksingle/booksingle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,8 @@ import { UserloginComponent } from './userlogin/userlogin.component';
     AddauthorComponent,
     ViewauthorComponent,
     UserregisterComponent,
-    UserloginComponent
+    UserloginComponent,
+    BooksingleComponent
   ],
   imports: [
     BrowserModule,

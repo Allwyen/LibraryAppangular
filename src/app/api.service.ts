@@ -31,6 +31,9 @@ export class ApiService {
   {
     return this.http.post("https://libraryapp-allwyen.herokuapp.com/employeelogin1",data);
   }
-
+  viewbooksingle(data)
+  {
+    return this.http.post("https://libraryapp-allwyen.herokuapp.com/viewbooksingle",data);
+  }
 }
 

@@ -52,7 +52,9 @@
                             <h5>
                             {{data.publisher}}
                             </h5>
-                            <a href="#" class="btn btn-primary">Readmore...</a>
+                            <input type="hidden" name="bookid" #bookid [(ngModel)]="data._id">
+                            <!-- <a href="#" class="btn btn-primary">Readmore...</a> -->
+                            <input type="button" (click)="booksingle(bookid.value)" class="btn btn-primary" value="Readmore..">
                           </div>
                           <div class="col-xs-3"></div>
                         </div>
