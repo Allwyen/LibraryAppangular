@@ -1,3 +1,93 @@
-<p>
-  booksingle works!
-</p>
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Book
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+                
+            
+                <div class="row" *ngFor="let data of mydata">    
+                    <br>
+                    <div class="col-md-2 col-sm-3 text-center">
+                      <a class="story-title" href="#"><img alt="" src="https://libraryapp-allwyen.herokuapp.com{{data.picture}}" style="width:100px;height:100px" class="img-circle"></a>
+                    </div>
+                    <div class="col-md-10 col-sm-9">
+                      <h3>{{data.title}}</h3>
+                      <div class="row">
+                        <div class="col-xs-9">
+                          <h4><strong>Author: </strong>{{data.author}}</h4>
+                          <h5><strong>Publisher: </strong>{{data.publisher}}</h5>
+                          <h5><strong>Price: </strong>{{data.price}}</h5>
+                          <h5><strong>Distributer: </strong>{{data.distributer}}</h5>
+                          <h5><strong>Date of Publication: </strong>{{data.DoP}}</h5>
+                          <h5><strong>Description: </strong>{{data.desc}}</h5>
+                        </div>
+                        <div class="col-xs-3"></div>
+                      </div>
+                      <br><br>
+                    </div>
+                </div>
+                  <hr>      
+          
+        </div>
+      </div>
+
+                                                                      
+                                                  
+                                                      
+     </div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+ 
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    
+  </div>
+</footer>
+  <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
