@@ -11,7 +11,8 @@ const appRoutes:Routes = [
   {path:'viewauthor',component:ViewauthorComponent},
   {path:'userlogin',component:UserloginComponent},
   {path:'userregister',component:UserregisterComponent},
-  {path:'booksingle',component:BooksingleComponent}
+  {path:'booksingle',component:BooksingleComponent},
+  {path:'authorsingle',component:AuthorsingleComponent}
 
 ]
 
@@ -24,6 +25,7 @@ import { ViewauthorComponent } from './viewauthor/viewauthor.component';
 import { UserregisterComponent } from './userregister/userregister.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { BooksingleComponent } from './booksingle/booksingle.component';
+import { AuthorsingleComponent } from './authorsingle/authorsingle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { BooksingleComponent } from './booksingle/booksingle.component';
     ViewauthorComponent,
     UserregisterComponent,
     UserloginComponent,
-    BooksingleComponent
+    BooksingleComponent,
+    AuthorsingleComponent
   ],
   imports: [
     BrowserModule,
