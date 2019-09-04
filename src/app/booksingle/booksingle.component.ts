@@ -17,7 +17,7 @@ export class BooksingleComponent implements OnInit {
     this.book = [{bookid:bookid}]
 
     this.apiservice.viewbooksingle(this.book[0]).subscribe((response:any)=>{
-      this.mydata=response;
+      this.mydata=[response];
       console.log(this.mydata);
     });
   }
